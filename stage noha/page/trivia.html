@@ -1,0 +1,158 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>minecraft</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../img/minecraft-logo.ico">
+    </head>
+    <body id="body">
+           <div id="bgselect" style="visibility: hidden; height:0%; opacity: 100%;">
+        <p>Bienvenu dans le changeur de fond<br>
+        ici, vous pouvez choisir le fond que tu veux appliquer a la page d'accueil<br>
+        Le navigateur se souviendera de votre choix.</p>
+        <div id='bgsbtn'>
+            <button onclick="javascript:selectBackground(1, 'blanc', false)" id="select1"></button>
+            <button onclick="javascript:selectBackground(2, 'vert', false)" id="select2"></button>
+            <button onclick="javascript:selectBackground(3, 'desert', false)" id="select3"></button>
+            <button onclick="javascript:selectBackground(4, 'feu', false)" id="select4"></button>
+            <button onclick="javascript:selectBackground(5, 'gris', false)" id="select5"></button>
+            <button onclick="javascript:selectBackground(6, 'rose', false)" id="select6"></button>
+            <button onclick="javascript:selectBackground(7, 'marecage', false)" id="select7"></button>
+            <button onclick="javascript:selectBackground(8, 'ocean', false)" id="select8"></button>
+            <button onclick="javascript:selectBackground(9, 'sunset', false)" id="select9"></button>
+            <button onclick="javascript:selectBackground(10, 'foret', false)" id="select10"></button>
+            <button onclick="javascript:selectBackground(0, 'none', false)" id="select0"> Retirer le fond</button>
+            <button onclick="javascript:selectBackground(null, 'foret', false)" id="selectrand">fond aléatoire</button>
+            </div>
+        <button id="Ihatethemes" onclick="notheme()">desactiver/réactiver les themes</button>
+        </div>
+        <script>
+            document.addEventListener(
+  "keydown",
+  (event) => {
+    const keyName = event.key;
+
+    if (keyName === "Escape") {
+
+                    document.getElementById('bgselect').style.height='0%'
+                    document.getElementById('bgselect').style.opacity='0%'
+                    document.getElementById('bgselect').style.width='0%'
+
+    }})
+        </script>
+        <script>
+                 document.addEventListener(
+  "keydown",
+  (event) => {
+    const keyName = event.key;
+if (window.innerWidth >=1000){
+    if (keyName === "Control") {document.getElementById('bgselect').style.visibility='visible'
+                    document.getElementById('bgselect').style.height='100%'
+                    document.getElementById('bgselect').style.opacity='100%'
+                    document.getElementById('bgselect').style.width='100%'
+
+                   
+}
+    }})
+                
+                    
+                
+            </script>
+        <header id="header"> 
+            <h1 id="title"><B>Trivia Minecraft</B></h1>
+            <div class="flex">
+                <div class="accueil"> <a href=../index.html class="header-link">Accueil</a></div>  
+                <div class="communautee"><a href=communautee.html class="header-link">Communauté</a></div> 
+                <div class="creation"><a href=creation.html class="header-link">Histoire</a></div>
+                <div class="trivia"><a href=trivia.html class="header-link">Trivia</a></div>
+                <div class="guide"> <a href=guide.html class="header-link">Guide</a></div>
+            </div>
+        </header>
+        <main>
+           <ul>
+            
+                <li class="p">Minecraft est le jeu le plus vendu</li>
+                <p class="p">Minecraft java est le jeu le plus vendu avec 350 millions de ventes<br>
+                <i>(le titre est parfois donné a Tetris, cependant, Tetris n'a plus de vente que Minecraft <br>
+                que si on considère toute les version de Tetris comme un seul et même jeu.)</i></p>
+                <li class="p">il existe beacoup de version de Minecraft</li>
+                    <ul><Li class="p">Minecraft JAVA : la version originale sur PC.</Li>
+                        <li class="p">Minecraft Bedrock: la version multiplateforme, plus optimisée mais moins libre.</li>
+                        <Li class="p">la version "legacy": l'ancienne version console de Minecraft developpée par 4j studios.</Li>
+                        <li class="p">la version classique: la première version de Minecraft disponible gratuitement dans le navigateur.</li>
+                        <li class="p">et bien d'autres souvant basées sur la version Bedrock comme la version "éducation" ou la version VR (qui a été abandonnée)<br>
+                            mais également des versions "non-officiels" comme pojav (ou pocket java) qui est un portage de la version java sur android.</li>
+                        <div class="four-J">
+                            <div class="img">
+                                <img src="../img/4J_Studios_Logo.jpg" tabindex="0">
+                            </div>
+                        </div>
+                        </ul>
+            
+                    <p class="p"></p>
+                <li class="p">Il est possible de faire tourner Minecraft dans Minecraft</li><div class="hypixel">
+                <p class="p"> grâce au mod "<a onclick="alertvm()" href="javascript:../yt-playlist-shuffle.js">VM computers"</a>, il est possible de faire tourner des machines virtuelles depuis Minecraft.<br>
+                donc, en paramétrant cette machine au préalable, il est possible de lancer et de jouer a Minecraft dans Minecraft.</p>
+</div>
+<script>
+    function alertvm(){
+        if(confirm("ce lien vous redirige vers un autre site, Continuer ?")){
+        window.location.replace("https://www.curseforge.com/minecraft/mc-mods/vm-computers")}
+        else{
+            undefined
+        }
+    }
+</script>
+                <li class="p">Nouvelle mise a jour</li> 
+                <p class="p">Une nouvelle mise a jour de minecraft est sortie le mardi 17 juin, rajoutant notament les ghasts gentils.<br> 
+                    Ce sont des ghasts que vous pouvez apprivoiser pour les monter et voyager dans le ciel.<br>
+                    Cette mise a jour rajoute également les "graphismes éclatants", uniquement disponible (bour Bedrock pour le moment) <br>
+                    modifiant les graphismes du jeu pour les rendre similaire au shaders de la version java.</p> 
+                <div class="G-E">
+                    <div class="img">
+                        <img src="../img/v_v-minecraft.jpeg" tabindex="0">
+                    </div>
+                </div>
+
+           </ul>
+        </main>
+        <footer id="footer">
+            <div class="footer"tabindex="0">
+            <h2 id="credits"><b>Noha Chevrier 2025</b></h2>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<style>
+    header > .flex > .trivia > a {
+        background: cyan !important;
+        color:black !important;
+        
+    }
+   .flex > .div > a{
+       transition-property: background-color, color, border-radius !important;
+    transition-duration: .5s, .5s, .5s !important;
+    color:black;
+    text-decoration: none;
+}
+
+.flex > div > a:hover {
+   
+    background-color : red !important;
+    padding: 5px !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.flex > div > a:focus {
+   
+    background-color: red !important; 
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    
+}
+</style>
+<script src="../javascripts/themes.js"></script>
+<script src="../javascripts/backgroundSelector.js"></script>
+    </body>
+</html>
