@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>minecraft</title>
+        
+       <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/minecraft-logo.ico">
+       
+    </head>
+    <body id="body" class="home"> 
+       <div id="bgselect" style="visibility: hidden; height:0%; opacity: 100%;">
+        <p>Bienvenu dans le changeur de fond<br>
+        ici, vous pouvez choisir le fond que tu veux appliquer a la page d'accueil<br>
+        Le navigateur se souviendera de votre choix.</p>
+        <div id='bgsbtn'>
+            <button onclick="javascript:selectBackground(1, 'blanc', true)" id="select1"></button>
+            <button onclick="javascript:selectBackground(2, 'vert', true)" id="select2"></button>
+            <button onclick="javascript:selectBackground(3, 'desert', true)" id="select3"></button>
+            <button onclick="javascript:selectBackground(4, 'feu', true)" id="select4"></button>
+            <button onclick="javascript:selectBackground(5, 'gris', true)" id="select5"></button>
+            <button onclick="javascript:selectBackground(6, 'rose', true)" id="select6"></button>
+            <button onclick="javascript:selectBackground(7, 'marecage', true)" id="select7"></button>
+            <button onclick="javascript:selectBackground(8, 'ocean', true)" id="select8"></button>
+            <button onclick="javascript:selectBackground(9, 'sunset', true)" id="select9"></button>
+            <button onclick="javascript:selectBackground(10, 'foret', true)" id="select10"></button>
+            <button onclick="javascript:selectBackground(0, 'none', true)" id="select0"> Retirer le fond</button>
+            <button onclick="javascript:selectBackground(null, 'foret', true)" id="selectrand">fond aléatoire</button>
+            </div>
+        <button id="Ihatethemes" onclick="notheme()">desactiver/réactiver les themes</button>
+        </div>
+        <script>
+            document.addEventListener(
+                "keydown",
+                (event) => {
+                    const keyName = event.key;
+
+    if (keyName === "Escape") {
+
+                    document.getElementById('bgselect').style.height='0%'
+                    document.getElementById('bgselect').style.opacity='0%'
+                    document.getElementById('bgselect').style.width='0%'
+
+    }})
+        </script>
+        <script>
+                 document.addEventListener(
+  "keydown",
+  (event) => {
+    const keyName = event.key;
+if (window.innerWidth >=1000){
+    if (keyName === "Control") {document.getElementById('bgselect').style.visibility='visible'
+                    document.getElementById('bgselect').style.height='100%'
+                    document.getElementById('bgselect').style.opacity='100%'
+                    document.getElementById('bgselect').style.width='100%'
+
+                   
+}
+    }})
+                
+                    
+                
+            </script>
+       </div></div>
+        <div class="video" id="fond">
+            
+            <script src="javascripts/yt-playlist-shuffle.js"></script>
+            </div>        
+        <div class="header-video">
+        <header id="header"> 
+            <h1 id="title">Minecraft</h1>
+            
+            <div class="bg-btn">
+                
+                               <script>
+                    
+                    
+                       
+                        document.write('<button id="bg.btn" onclick="bgToggle(false)" tabindex="0" style="visibility : visible;" >retirer le fond ?</button>')
+                        document.write('<button id="bg.btn2" onclick="bgToggle(true)" style="visibility: hidden;" tabindex="0"> restaurer le fond ?</button>')
+                    setInterval (aaaaa, 100)
+                        function aaaaa() {
+                    if (localStorage.getItem('Random') == 0){
+                        document.getElementById("bg.btn").style.visibility="hidden";
+                    }
+                    }
+                    </script></div>
+            <script>
+            //permet de retirer le fond pour les appareils mobiles
+            setInterval(mobilebg, 100);
+            
+                
+                function mobilebg(){
+                    if (Random != 0){
+                if (document.getElementById("bg.btn").style.visibility=="visible"){
+                
+                    if(window.innerWidth < 1000) {
+                        document.getElementById("fond").style.opacity = "0%";
+                        document.getElementById("fond").style.width = "0%"
+                        document.getElementById("bg.btn").style.opacity="0%";
+                        document.getElementById("bg.btn").style.zIndex="-1";
+                        document.getElementById("bg.btn2").style.opacity="0%";
+                        document.getElementById("bg.btn2").style.zIndex="-1";
+                        document.getElementById("bg.btn").tabIndex="-1"
+                        document.getElementById("bg.btn2").tabIndex="-1"
+                        document.getElementById('bgselect').style.visibility='hidden';
+                    
+                    } 
+                
+                
+            
+               
+                    else {
+                        document.getElementById("fond").style.opacity = "100%";
+                        document.getElementById("fond").style.width = "100%"
+                        document.getElementById("bg.btn").style.opacity="50%";
+                        document.getElementById("bg.btn2").style.opacity="50%";
+                        document.getElementById("bg.btn").style.zIndex="1";
+                        document.getElementById("bg.btn2").style.zIndex="1";
+                        document.getElementById("bg.btn").tabIndex="1"
+                        document.getElementById("bg.btn2").tabIndex="1"
+                            
+                    }
+                
+                }
+                if (window.innerWidth < 1000) {
+                    if (document.getElementById("bg.btn").style.visibility=="hidden"){
+                            document.getElementById("bg.btn2").style.opacity="0%";
+                            document.getElementById("bg.btn2").style.zIndex="-1";
+                            document.getElementById("bg.btn2").tabIndex="-1";
+                            document.getElementById('bgselect').style.visibility='hidden';
+                            
+                
+                }}
+                 if (window.innerWidth >= 1000){
+                    if (document.getElementById("bg.btn").style.visibility=="hidden"){
+                        document.getElementById("bg.btn2").style.opacity="50%";
+                        document.getElementById("bg.btn2").style.zIndex="1";
+                        document.getElementById("bg.btn2").tabIndex="1"
+                        
+                }
+                }
+                }
+            }
+        
+
+            </script>
+            <div class="flex">
+                <div class="accueil"> <a class="header-link" href=index.html>Accueil</a></div>  
+                <div class="communautee"><a  class="header-link" href=page/communautee.html>Communauté</a></div> 
+                <div class="creation"><a  class="header-link" href=page/creation.html>Histoire</a></div>
+                <div class="trivia"><a  class="header-link" href=page/trivia.html>Trivia</a></div>
+                <div class= "guide"> <a class="header-link"  href=page/guide.html>Guide</a></div>
+             </div>
+            </div>
+        </header>
+        <script>
+            setInterval(header, 100)
+            function header(){
+                if (window.innerWidth < 1000) {
+                    document.getElementById('header').style.position='relative'
+                    document.getElementById('header').style.top='-50vH'
+            }
+            else{
+                document.getElementById('header').style.position='absolute'
+                document.getElementById('header').style.top='0%'
+            }
+        }
+        </script>
+        <main>
+             
+            <div id="first"><p class="p"> Minecraft est un jeu sorti en 2009 par Notch. <br>
+                il est connu pour donner au joueur l'opportunitée de construire ce qu'il veut avec aucune limitation.<br>
+                le jeu appartient aujourd'hui a microsoft. </p></div>
+           
+            <div>
+                <p class="p"> une version classique du jeu est disponible gratuitement dans le navigateur, <br>
+                cependant, il s'agit d'une acienne version disposant de moins de fonctionnalités</p>
+            </div>
+            <div class="mcbtn">
+                <a data-href="https://classic.minecraft.net" tabindex="0" class="external-link" role='link'>Minecraft Classique</a>
+                
+            </div>
+            
+            <div>
+            <p class="p">Pour la nouvelle version de Minecraft, Il faut l'acheter,<br> 
+                pour Pc, cela se fait sur le site de minecraft</p></div>
+                <div class="mcbtn">
+                    <a data-href="https://www.minecraft.net" tabindex="0" class="external-link" role="link"> Minecraft</a>
+                </div>
+              <div>
+                <p class="p">Sinon, il existe une version démo de Minecraft,<br>
+                 ou vous pouvez jouer sur un monde défini avec une limite de temps de 100 minutes par monde.</p></div>
+                 </div><div class="mcbtn">
+                    <a data-href="https://www.minecraft.net/fr-fr/free-trial" tabindex="0" class="external-link" role="link">Minecraft démo</a>
+                </div>
+               
+                <style>
+                    
+                </style>
+        </main>
+        <footer id="footer">
+            <div class="footer" tabindex="0">
+            <h2 id="credits"><b>Noha Chevrier 2025</b></h2>
+            <br>
+           
+                
+            
+            
+            </footer>
+        
+
+        
+        <style>
+    header > .flex > .accueil > a {
+        background: cyan !important;
+        color:black !important;
+        
+    }
+   .flex > .div > a{
+       transition-property: background-color, color, border-radius !important;
+    transition-duration: .5s, .5s, .5s !important;
+    color:black;
+    text-decoration: none;
+    
+}
+
+.flex > div > a:hover {
+   
+    background-color : red !important;
+    padding: 5px !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.flex > div > a:focus {
+   
+    background-color: red !important; 
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    
+}
+body{
+ margin:0% !important;
+ overflow-x: hidden;
+}
+
+p{
+    margin-left: 110px;
+}
+
+
+</style>
+   <script src="javascripts/themes.js"></script>
+   <script src="javascripts/externalLinks.js"></script> 
+   <script src='javascripts/backgroundSelector.js'></script>
+   <script>
+   if(window.innerWidth <1000){
+    alert("Ce site n'est pas adapté pour être utilisé sur les appareils mobiles, certaines fonctionalités estétiques ne fonctionneront pas et l'alignage des zones de texte ou des images peut les rendre ilisibles, si vous rencontrez des problêmes, essayez d'utiliser le site sur un ordinateur en plein écran.")
+}
+</script>
+</body>
+    
+</html> 

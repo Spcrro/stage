@@ -1,0 +1,140 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>minecraft</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/minecraft-logo.ico">
+</head>
+<body id="body">
+<header id="header">
+            <div id="bgselect" style="visibility: hidden; height:0%; opacity: 100%;">
+        <p>Bienvenu dans le changeur de fond<br>
+        ici, vous pouvez choisir le fond que tu veux appliquer a la page d'accueil<br>
+        Le navigateur se souviendera de votre choix.</p>
+        <div id='bgsbtn'>
+            <button onclick="javascript:selectBackground(1, 'blanc', false)" id="select1"></button>
+            <button onclick="javascript:selectBackground(2, 'vert', false)" id="select2"></button>
+            <button onclick="javascript:selectBackground(3, 'desert', false)" id="select3"></button>
+            <button onclick="javascript:selectBackground(4, 'feu', false)" id="select4"></button>
+            <button onclick="javascript:selectBackground(5, 'gris', false)" id="select5"></button>
+            <button onclick="javascript:selectBackground(6, 'rose', false)" id="select6"></button>
+            <button onclick="javascript:selectBackground(7, 'marecage', false)" id="select7"></button>
+            <button onclick="javascript:selectBackground(8, 'ocean', false)" id="select8"></button>
+            <button onclick="javascript:selectBackground(9, 'sunset', false)" id="select9"></button>
+            <button onclick="javascript:selectBackground(10, 'foret', false)" id="select10"></button>
+            <button onclick="javascript:selectBackground(0, 'none', false)" id="select0"> Retirer le fond</button>
+            <button onclick="javascript:selectBackground(null, 'foret', false)" id="selectrand">fond aléatoire</button>
+            </div>
+        <button id="Ihatethemes" onclick="notheme()">desactiver/réactiver les themes</button>
+        </div>
+        <script>
+            document.addEventListener(
+  "keydown",
+  (event) => {
+    const keyName = event.key;
+
+    if (keyName === "Escape") {
+
+                    document.getElementById('bgselect').style.height='0%'
+                    document.getElementById('bgselect').style.opacity='0%'
+                    document.getElementById('bgselect').style.width='0%'
+
+    }})
+        </script>
+        <script>
+                 document.addEventListener(
+  "keydown",
+  (event) => {
+    const keyName = event.key;
+if (window.innerWidth >=1000){
+    if (keyName === "Control") {document.getElementById('bgselect').style.visibility='visible'
+                    document.getElementById('bgselect').style.height='100%'
+                    document.getElementById('bgselect').style.opacity='100%'
+                    document.getElementById('bgselect').style.width='100%'
+
+                   
+}
+    }})
+                
+                    
+                
+            </script> 
+    <h1 id="title">Histoire  Minecraft</h1>
+<div class="flex">
+                <div class="accueil"> <a href=../index.html class="header-link">Accueil</a></div>  
+                <div class="communautee"><a href=communautee.html class="header-link">Communauté</a></div> 
+                <div class="creation"><a href=creation.html class="header-link">Histoire</a></div>
+                <div class="trivia"><a href=trivia.html class="header-link">Trivia</a></div>
+                <div class="guide"> <a href=guide.html class="header-link">Guide</a></div>
+</div>
+</header>
+<main> 
+    <p class="p">Minecraft est créé le 10 mai 2009 par Notch,
+    de son vrai nom Markus Persson. D'abord développé pour être un jeu sur navigateur Web puis finalement pour ordinateurs à l'aide de Java,
+    il tire son inspiration de jeux plus anciens comme Dwarf Fortress (pour la très grande liberté offerte,
+    la génération procédurale d'univers ainsi que certains types de blocs), 
+    Dungeon Keeper (pour l'ambiance et les souterrains) ou 
+    encore RollerCoaster Tycoon (pour l'aspect créatif et accessible)</p>
+
+    <p class="p">Le 15 septembre 2014, les diverses rumeurs circulant sur Internet sont confirmées : 
+        le studio de développement Mojang, créateur de Minecraft, est racheté par Microsoft pour environ 2,5 milliards de dollars 
+        (soit un peu moins de 2 milliards d'euros pour l'époque). 
+        Le fondateur, Markus Persson, déclare qu'il quitte totalement le développement de Minecraft pour préserver sa santé mentale. 
+        Il annonce qu'il ne veut ni rejoindre Microsoft, 
+        ni rester chef de l'entreprise. 
+        Il ajoute que Minecraft restera disponible sur toutes les plateformes. 
+        En 2020, six ans après le rachat, Mojang devient Mojang Studios.</p>
+    <div class="img-flex">
+                <div class="notch">
+                        <div class="img">
+                            <img src="../img/notch.jpg" height="100%" width="100%" tabindex="0">
+                            <p class="p"> notch : le créateur de Minecraft</p>
+                      </div>  
+                </div>
+                    <div class="mojang">
+                        <div class="img">
+                            <img src="../img/mojang.jpg" height="100%" width="100%" tabindex="0">
+                            <p class="p">l'équipe de mojang, les développeur <br> actuel de Minecraft </p>
+                        </div>        
+                    </div>
+            </div> 
+         
+        
+</main>
+<footer id="footer">
+            <div class="footer"tabindex="0">
+            <h2 id="credits"><b>Noha Chevrier 2025</b></h2>
+        </footer>
+<style>
+    header > .flex > .creation > a {
+        background: cyan !important;
+        color:black !important;
+        
+    }
+   .flex > .div > a{
+       transition-property: background-color, color, border-radius !important;
+    transition-duration: .5s, .5s, .5s !important;
+    color:black;
+    text-decoration: none;
+}
+
+.flex > div > a:hover {
+   
+    background-color : red !important;
+    padding: 5px !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.flex > div > a:focus {
+   
+    background-color: red !important; 
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    
+}
+</style>
+<script src="../javascripts/themes.js"></script>
+<script src="../javascripts/backgroundSelector.js"></script>
+</body>
+</html>
