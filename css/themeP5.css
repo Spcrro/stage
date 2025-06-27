@@ -1,0 +1,27 @@
+ header > .flex > .guide > a {
+                background: cyan !important;
+                color:black !important;
+                
+            }
+        .flex > .div > a{
+            transition-property: background-color, color, border-radius !important;
+            transition-duration: .5s, .5s, .5s !important;
+            color:black;
+            text-decoration: none;
+        }
+
+        .flex > div > a:hover {
+        
+            background-color : red !important;
+            padding: 5px !important;
+            color: white !important;
+            border-radius: 10px !important;
+        }
+        .flex > div > a:focus {
+        
+            background-color: red !important; 
+            padding: 5px;
+            color: white;
+            border-radius: 10px;
+            
+        }
