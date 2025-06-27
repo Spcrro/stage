@@ -1,6 +1,0 @@
-apparerils mobiles : ok mais sans le fond (marche pas avec le mode responsive sur 4 pages zeuvzrbvrfvqezvbtzefphfpzi)
-contrôles claviers: ok
-zoom : ok
-contraste : ok 
-
-lecteur d'écran : non compatible 
