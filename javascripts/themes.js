@@ -8,7 +8,7 @@ if(localStorage.getItem('wanttheme')!=0 && localStorage.getItem('wanttheme')!= 1
     }
     
 if(localStorage.getItem('welcome')==undefined){
-    alert("Bienvenu, ce site est un test qui m'a permi de découvrir d'aventage le monde du développement web, je vous invite donc a explorer ce site pour essayer de comprendre ce que j'ai appris pendant mon stage (vous pouvez appuyer sur controle pour changer le theme et le fond du site)")
+    alert("Bienvenu, ce site est un test qui m'a permis de découvrir d'avantage le monde du développement web, je vous invite donc à explorer ce site pour essayer de comprendre ce que j'ai appris pendant mon stage (vous pouvez appuyer sur ctrl pour changer le thème et le fond du site)")
     localStorage.setItem('welcome', 1)
     var Random=8
 }
